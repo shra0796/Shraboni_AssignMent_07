@@ -79,6 +79,17 @@ Displays the average yield and average cultivation area for each crop between 19
 
 Tables are styled using inline styles within the components to avoid external CSS files. The table container is centered on the screen using flexbox.
 
+##Screenshots
+1st table==========>(Year, Crop with maximum production, Crop with minimum production)
+![alt text](<Screenshot 2024-05-23 013616-1.png>)
+![alt text](<Screenshot 2024-05-23 014321-1.png>)
+![alt text](<Screenshot 2024-05-23 014346.png>)
+![alt text](<Screenshot 2024-05-23 014408.png>)
+![alt text](<Screenshot 2024-05-23 014429.png>)
+
+2nd table==========>(Crop, Average Yield (Kg/Ha), Average Cultivation Area (Ha))
+![alt text](<Screenshot 2024-05-23 014154.png>)
+
 ## Notes
 
 - All missing cell values in the dataset are treated as 0.
