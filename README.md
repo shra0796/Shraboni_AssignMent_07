@@ -81,7 +81,7 @@ Tables are styled using inline styles within the components to avoid external CS
 
 ##Screenshots
 1st table==========>(Year, Crop with maximum production, Crop with minimum production)
-![alt text](<Screenshot 2024-05-23 013616-1.png>)
+![alt text](<Screenshot 2024-05-23 013616.png>)
 ![alt text](<Screenshot 2024-05-23 014321-1.png>)
 ![alt text](<Screenshot 2024-05-23 014346.png>)
 ![alt text](<Screenshot 2024-05-23 014408.png>)
