@@ -47,22 +47,22 @@ const AggregatedTable: React.FC = () => {
   return (
     <div style={tableStyles.container}>
       <Table style={[tableStyles.table,{borderCollapse: "collapse"}]}>
-        <thead>
-          <tr style={tableStyles.tr}>
-            <th style={tableStyles.th}>Year</th>
-            <th style={tableStyles.th}>Crop with Maximum Production</th>
-            <th style={tableStyles.th}>Crop with Minimum Production</th>
-          </tr>
-        </thead>
-        <tbody>
+        <Table.Thead>
+          <Table.Tr style={tableStyles.tr}>
+            <Table.Th style={tableStyles.th}>Year</Table.Th>
+            <Table.Th style={tableStyles.th}>Crop with Maximum Production</Table.Th>
+            <Table.Th style={tableStyles.th}>Crop with Minimum Production</Table.Th>
+          </Table.Tr>
+        </Table.Thead>
+        <Table.Tbody>
           {data.map((row) => (
-            <tr key={row.Year} style={tableStyles.tr}>
-              <td style={tableStyles.td}>{row.Year}</td>
-              <td style={tableStyles.td}>{row.MaxCrop}</td>
-              <td style={tableStyles.td}>{row.MinCrop}</td>
-            </tr>
+            <Table.Tr key={row.Year} style={tableStyles.tr}>
+              <Table.Td style={tableStyles.td}>{row.Year}</Table.Td>
+              <Table.Td style={tableStyles.td}>{row.MaxCrop}</Table.Td>
+              <Table.Td style={tableStyles.td}>{row.MinCrop}</Table.Td>
+            </Table.Tr>
           ))}
-        </tbody>
+        </Table.Tbody>
       </Table>
     </div>
   );

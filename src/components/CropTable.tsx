@@ -45,22 +45,22 @@ const CropTable: React.FC = () => {
   return (
     <div style={tableStyles.container}>
       <Table style={[tableStyles.table, {borderCollapse: "collapse"}]}>
-        <thead>
-          <tr style={tableStyles.tr}>
-            <th style={tableStyles.th}>Crop</th>
-            <th style={tableStyles.th}>Average Yield (Kg/Ha)</th>
-            <th style={tableStyles.th}>Average Cultivation Area (Ha)</th>
-          </tr>
-        </thead>
-        <tbody>
+        <Table.Thead>
+          <Table.Tr style={tableStyles.tr}>
+            <Table.Th style={tableStyles.th}>Crop</Table.Th>
+            <Table.Th style={tableStyles.th}>Average Yield (Kg/Ha)</Table.Th>
+            <Table.Th style={tableStyles.th}>Average Cultivation Area (Ha)</Table.Th>
+          </Table.Tr>
+        </Table.Thead>
+        <Table.Tbody>
           {data.map((row, index) => (
-            <tr key={index} style={tableStyles.tr}>
-              <td style={tableStyles.td}>{row.Crop}</td>
-              <td style={tableStyles.td}>{row.AverageYield.toFixed(3)}</td>
-              <td style={tableStyles.td}>{row.AverageArea.toFixed(3)}</td>
-            </tr>
+            <Table.Tr key={index} style={tableStyles.tr}>
+              <Table.Td style={tableStyles.td}>{row.Crop}</Table.Td>
+              <Table.Td style={tableStyles.td}>{row.AverageYield.toFixed(3)}</Table.Td>
+              <Table.Td style={tableStyles.td}>{row.AverageArea.toFixed(3)}</Table.Td>
+            </Table.Tr>
           ))}
-        </tbody>
+        </Table.Tbody>
       </Table>
     </div>
   );
