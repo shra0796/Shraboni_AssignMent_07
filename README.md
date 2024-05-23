@@ -29,7 +29,7 @@ Follow these steps to set up and run the project:
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/shra0796/Shraboni_AssignMent_07.git
+    git clone -b master "https://github.com/shra0796/Shraboni_AssignMent_07.git"
     cd indian-agriculture
     ```
 
